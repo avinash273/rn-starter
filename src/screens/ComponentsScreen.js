@@ -5,10 +5,6 @@ const ComponentsScreen = () => {
     return <Text style={styles.textStyle}>This is a ComponentScreen</Text>;
 };
 
-const ComponentsScreen2 = () => {
-    return <Text style={styles.textStyle}>This is a ComponentScreen</Text>;
-};
-
 const styles = StyleSheet.create({
     textStyle: {
         fontSize: 20
