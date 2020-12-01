@@ -1,13 +1,13 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity} from "react-native";
 
-const HomeScreen = () => {
+const HomeScreen = props => {
   return(
     <View>
       <Text style={styles.text}>Avinash Shanker's HomeScreen</Text>
       <Button
       title = "Go to Components Demo"
-      onPress = {() => console.log("Button Pressed2")}
+      onPress = {() => props.navigation.navigate('Components')}
       />
 
       <TouchableOpacity onPress = {() => console.log("List Pressed")}>
@@ -17,7 +17,7 @@ const HomeScreen = () => {
     </View>
   );
 };
-
+ 
 const styles = StyleSheet.create({
   text: {
     fontSize: 30
