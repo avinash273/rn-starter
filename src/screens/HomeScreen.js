@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity} from "react-native";
 
+//navigating through screens use props and props.navigation.navigate
 const HomeScreen = props => {
   return(
     <View>
@@ -10,9 +11,8 @@ const HomeScreen = props => {
       onPress = {() => props.navigation.navigate('Components')}
       />
 
-      <TouchableOpacity onPress = {() => console.log("List Pressed")}>
-        <Text>Go to List Demo</Text>
-        <Text>Go to List Demo</Text>
+      <TouchableOpacity onPress = {() => props.navigation.navigate('Lists')}>
+        <Text>Press to go to List Demo</Text>
       </TouchableOpacity>
     </View>
   );
